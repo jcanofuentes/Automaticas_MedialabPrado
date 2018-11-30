@@ -1,0 +1,16 @@
+#N canvas 358 302 872 575 10;
+#X obj 284 371 osc~;
+#X obj 272 491 dac~;
+#X floatatom 303 308 5 0 0 0 - - -;
+#X obj 267 186 unpack f f;
+#X floatatom 293 250 5 0 0 0 - - -;
+#X floatatom 368 248 5 0 0 0 - - -;
+#X obj 267 106 OSCroute /a1;
+#X obj 406 49 dumpOSC 11113;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 4 0 2 0;
+#X connect 6 0 3 0;
+#X connect 7 0 6 0;
